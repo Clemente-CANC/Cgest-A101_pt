@@ -1,0 +1,17 @@
+<RCC>
+  <qresource prefix="image">
+    <file>Images/canc_BS_logo.png</file>
+    <file>Images/profile-user.png</file>
+    <file>Images/add_user.png</file>
+    <file>Images/about.png</file>
+    <file>Images/logo4.png</file>
+    <file>Images/open_lock1.png</file>
+    <file>logo3.png</file>
+    <file>Images/closed_lock1.png</file>
+    <file>Images/camera1.png</file>
+    <file>Images/next.png</file>
+    <file>Images/Icon.ico</file>
+    <file>Images/foto.png</file>
+    <file>Images/cil-x.png</file>
+  </qresource>
+</RCC>

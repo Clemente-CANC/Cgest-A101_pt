@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>985</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1155</width>
+    <height>812</height>
+   </size>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Cgest </string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/imagem/Images/Icon.ico</normaloff>:/imagem/Images/Icon.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/image/Images/foto.png);
+background-position: center;</string>
+  </property>
+  <widget class="QWidget" name="window">
+   <layout class="QVBoxLayout" name="verticalLayout_main">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="top_line">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>35</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(63, 63, 63, 190);
+background-image: url();</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_top">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="pop_valida">
+         <property name="maximumSize">
+          <size>
+           <width>430</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(124, 118, 115);
+border-radius: 5px;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_erro">
+          <property name="leftMargin">
+           <number>10</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>10</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_notification_message">
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(230, 230, 231);</string>
+            </property>
+            <property name="text">
+             <string>Erro</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_close_notification">
+            <property name="maximumSize">
+             <size>
+              <width>22</width>
+              <height>22</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	background-image: url(:/image/Images/cil-x.png);
+	background-position: center;
+	background-repeat: none;
+	background-color: rgb(161, 97, 79);
+	border-radius: 10px;
+}
+
+QPushButton:hover{
+	border: 2px solid rgb(212, 127, 104);
+}
+
+QPushButton:pressed{
+	background-color: rgb(212, 127, 104);
+}
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="area_central">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(114, 115, 117, 0);
+background-image: url();
+
+
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_areacent">
+       <item row="0" column="0">
+        <widget class="QFrame" name="frame_logo">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>110</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-image: url(:/image/Images/canc_BS_logo.png);
+background-color: rgb(183, 110, 90, 150);
+border-radius: 45px;
+border: 4px solid rgb(183, 110, 90)
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QFrame" name="layout_main">
+         <property name="maximumSize">
+          <size>
+           <width>450</width>
+           <height>500</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(14, 9, 9, 200);
+color: rgb(182, 157, 139);
+border-radius: 13px;
+background-image: url();</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QLabel" name="label_title_text">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>0</y>
+            <width>191</width>
+            <height>131</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Alba Super</family>
+            <pointsize>48</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel{	
+	color: rgb(183, 110, 90);
+	background-color: rgb(184, 170, 200, 0);
+}
+
+QLabel:hover{
+	
+	color:  rgb(201, 131, 90);
+}</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Login&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QFrame" name="frame_user_image">
+          <property name="geometry">
+           <rect>
+            <x>159</x>
+            <y>145</y>
+            <width>131</width>
+            <height>131</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame{
+	background-image: url(:/image/Images/profile-user.png);
+	border: 6px  solid rgb(161, 97, 79);
+	background-position: center;
+	border-radius: 65px;
+	
+}
+
+QFrame:hover{
+	border: 6px  solid rgb(201, 131, 90);
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_name_user">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>290</y>
+            <width>250</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei UI</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	background-color: rgb(44, 34, 31, 160);
+	border-radius: 10px;
+	border: 2px solid rgb(161, 97, 79);
+	padding: 10px;
+}
+
+QLineEdit:hover{
+	border: 2px solid rgb(201, 131, 90);
+}
+
+QLineEdit:focus{
+	border: 2px solid rgb(201, 131, 90);
+}</string>
+          </property>
+          <property name="inputMask">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="placeholderText">
+           <string notr="true">Nome do usuário</string>
+          </property>
+          <property name="cursorMoveStyle">
+           <enum>Qt::LogicalMoveStyle</enum>
+          </property>
+          <property name="clearButtonEnabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_password">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>350</y>
+            <width>250</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei UI</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	background-color: rgb(44, 34, 31, 160);
+	border-radius: 10px;
+	border: 2px solid rgb(161, 97, 79);
+	padding: 10px;
+}
+
+QLineEdit:hover{
+	border: 2px solid rgb(201, 131, 90);
+}
+
+QLineEdit:focus{
+	border: 2px solid rgb(201, 131, 90);
+}</string>
+          </property>
+          <property name="inputMask">
+           <string/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="placeholderText">
+           <string notr="true">senha</string>
+          </property>
+          <property name="cursorMoveStyle">
+           <enum>Qt::LogicalMoveStyle</enum>
+          </property>
+          <property name="clearButtonEnabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_enter">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>410</y>
+            <width>250</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei UI</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	background-color: rgb(161, 97, 79);
+	border-radius: 10px;
+	padding: 10px;
+	color: rgb(230, 230, 231);
+}
+
+QPushButton:hover{
+	border: 2px solid rgb(212, 127, 104);
+}
+
+QPushButton:pressed{
+	background-color: rgb(212, 127, 104);
+}</string>
+          </property>
+          <property name="text">
+           <string>Entrar</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_add">
+          <property name="geometry">
+           <rect>
+            <x>400</x>
+            <y>10</y>
+            <width>41</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	background-image: url(:/image/Images/add_user.png);
+	background-position: center;
+	background-repeat: none;
+	background-color: rgb(161, 97, 79);
+	border-radius: 20px;
+}
+
+QPushButton:hover{
+	border: 2px solid rgb(212, 127, 104);
+}
+
+QPushButton:pressed{
+	background-color: rgb(212, 127, 104);
+}
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_recover_account">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>465</y>
+            <width>211</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei UI</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	background-color: rgb(184, 170, 200, 0);
+}
+
+QPushButton:hover{
+	
+	color:  rgb(201, 131, 90);
+}
+
+QPushButton:pressed{
+	color:  rgb(190, 100, 80);
+}</string>
+          </property>
+          <property name="text">
+           <string>Esqueci a minha senha</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_password">
+          <property name="geometry">
+           <rect>
+            <x>305</x>
+            <y>355</y>
+            <width>41</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	background-image: url(:/image/Images/closed_lock1.png);
+	background-position: center;
+	background-repeat: none;
+	background-color: rgb(161, 97, 79, 0);
+	border-radius: 20px;
+}
+
+QPushButton:hover{
+	border: 2px solid rgb(212, 127, 104);
+}
+
+QPushButton:pressed{
+	background-color: rgb(212, 127, 104);
+}
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_about">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>450</y>
+            <width>41</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	background-image: url(:/image/Images/about.png);
+	background-position: center;
+	background-repeat: none;
+	background-color: rgb(161, 97, 79);
+	border-radius: 20px;
+}
+
+QPushButton:hover{
+	border: 2px solid rgb(212, 127, 104);
+}
+
+QPushButton:pressed{
+	background-color: rgb(212, 127, 104);
+}
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="down_line">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(63, 63, 63, 190);
+background-image: url();</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_down">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>911</width>
+           <height>9</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_credit">
+         <property name="font">
+          <font>
+           <family>Microsoft JhengHei UI</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 170, 255, 0);
+color: rgb(230, 230, 231);</string>
+         </property>
+         <property name="text">
+          <string>Criado por : Clement Alberto N. Cazadi</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../resource.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>lineEdit_name_user</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>pop_valida</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>372</x>
+     <y>474</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>702</x>
+     <y>29</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_password</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>pop_valida</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>380</x>
+     <y>532</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>284</x>
+     <y>7</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
