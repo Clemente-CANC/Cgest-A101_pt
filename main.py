@@ -57,9 +57,11 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         
         # -----
         elif event == "add":
+            # Adicionando uma imagem. 
             try:
                 self.image_path, filte = QtWidgets.QFileDialog.getOpenFileName(self, "Escolha uma imagem", filter="Arquivos de imagem (*.png; *jpg)")
                 self.user_image = QtGui.QPixmap(self.image_path)
+                # Modificando o tamanho da imagem para 120x120
                 self.user_image = self.user_image.scaled(QtCore.QSize(120, 120), transformMode=QtCore.Qt.SmoothTransformation)
                 self.frame_user_image.setPixmap(self.user_image)
             except:
